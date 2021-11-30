@@ -1,0 +1,142 @@
+@font-face {
+    font-family: Neon Club Music;
+    src: url(font1.otf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Neon Club Music;
+    font-weight: 900;
+}
+body {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    background-color: #0e0e0e;
+    background-image: url(wall.jpg);
+    background-size: cover;
+}
+
+h1 {
+    color: #fff;
+    font-size: 5rem;
+    letter-spacing: .5rem;
+
+    text-shadow: 0 0 .5rem rgba(255, 0, 0, .5),
+                 0 0 1rem rgba(255, 0, 0, .9),
+                 0 0 1rem rgba(255, 0, 0, 1),
+                 0 0 1rem rgba(255, 0, 0, 1);
+}
+.container {
+    border: .5rem solid #fff;
+    padding: 3rem;
+    border-radius: .5rem;
+    box-shadow: 0 0 .5rem rgba(255, 0, 0, .5),
+                0 0 1rem rgba(255, 0, 0, .9),
+                0 0 2rem rgba(255, 0, 0, 1),
+                
+                inset 0 0 .5rem rgba(255, 0, 0, .5),
+                inset 0 0 1rem rgba(255, 0, 0, .9),
+                inset 0 0 2rem rgba(255, 0, 0, 1);
+}
+
+span {
+    opacity: 1;
+    text-shadow: 0 0 .5rem rgba(255, 0, 0, .5),
+                 0 0 1rem rgba(255, 0, 0, .9),
+                 0 0 1rem rgba(255, 0, 0, 1),
+                 0 0 1rem rgba(255, 0, 0, 1);
+}
+
+.container:hover .a,
+.container:hover .e {
+    animation: blink1 1000ms ease-in-out infinite;
+}
+.container:hover .b {
+    animation: blink2 1000ms ease-in-out infinite;
+}
+.container:hover {
+    animation: container_blink 1000ms ease-in-out infinite;
+}
+
+@keyframes blink1 {
+    60% {
+        opacity: 1;
+        text-shadow: 0 0 .5rem rgba(255, 0, 0, .5),
+                     0 0 1rem rgba(255, 0, 0, .9),
+                     0 0 1rem rgba(255, 0, 0, 1),
+                     0 0 1rem rgba(255, 0, 0, 1);
+    }
+    70% {
+        opacity: .3;
+        text-shadow: none;
+    }
+    75% {
+        opacity: 1;
+        text-shadow: 0 0 .5rem rgba(255, 0, 0, .5),
+                     0 0 1rem rgba(255, 0, 0, .9),
+                     0 0 1rem rgba(255, 0, 0, 1),
+                     0 0 1rem rgba(255, 0, 0, 1);
+    }
+    100% {
+        opacity: .3;
+        text-shadow: none;
+    }
+}
+
+@keyframes blink2 {
+    20% {
+        opacity: 1;
+        text-shadow: 0 0 .5rem rgba(255, 0, 0, .5),
+                     0 0 1rem rgba(255, 0, 0, .9),
+                     0 0 1rem rgba(255, 0, 0, 1),
+                     0 0 1rem rgba(255, 0, 0, 1);
+    }
+    30% {
+        opacity: .3;
+        text-shadow: none;
+    }
+    40% {
+        opacity: 1;
+        text-shadow: 0 0 .5rem rgba(255, 0, 0, .5),
+                     0 0 1rem rgba(255, 0, 0, .9),
+                     0 0 1rem rgba(255, 0, 0, 1),
+                     0 0 1rem rgba(255, 0, 0, 1);
+    }
+    60% {
+        opacity: .3;
+        text-shadow: none;
+    }
+}
+
+@keyframes container_blink {
+    20% {
+        border: .5rem solid #fff;
+        box-shadow: 0 0 .5rem rgba(255, 0, 0, .5),
+                    0 0 1rem rgba(255, 0, 0, .9),
+                    0 0 2rem rgba(255, 0, 0, 1),
+                    
+                    inset 0 0 .5rem rgba(255, 0, 0, .5),
+                    inset 0 0 1rem rgba(255, 0, 0, .9),
+                    inset 0 0 2rem rgba(255, 0, 0, 1);
+    }
+    30% {
+        border: .5rem solid rgba(255, 255, 255, .3);
+        box-shadow: none;
+    }
+    40% {
+        border: .5rem solid #fff;
+        box-shadow: 0 0 .5rem rgba(255, 0, 0, .5),
+                    0 0 1rem rgba(255, 0, 0, .9),
+                    0 0 2rem rgba(255, 0, 0, 1),
+                    
+                    inset 0 0 .5rem rgba(255, 0, 0, .5),
+                    inset 0 0 1rem rgba(255, 0, 0, .9),
+                    inset 0 0 2rem rgba(255, 0, 0, 1);
+    }
+    60% {
+        border: .5rem solid rgba(255, 255, 255, .3);
+        box-shadow: none;
+    }
+}
